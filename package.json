@@ -1,5 +1,5 @@
 {
-  "name": "actions",
+  "name": "action-create-tag",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -8,14 +8,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/opensafety/actions.git"
+    "url": "(https://github.com/opensafety/action-create-tag.git)"
   },
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/opensafety/actions/issues"
-  },
-  "homepage": "https://github.com/opensafety/actions#readme",
   "dependencies": {
     "@actions/core": "^1.10.0",
     "@actions/github": "^5.1.1",
