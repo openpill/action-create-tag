@@ -2,17 +2,20 @@ const { Octokit } = require('octokit');
 
 async function run() {
   try {
-    const octokit = new Octokit({
-      auth: process.env.GITHUB_TOKEN,
-    });
-
+    
     const { owner, repo } = github.context.repo;
 
     const tagName = process.env.INPUT_TAG_NAME;
     const commitish = process.env.INPUT_COMMITISH;
     const tagMessage = process.env.INPUT_TAG_MESSAGE;
+    const token = process.env.INPUT_TOKEN;
     const currentTime = new Date().toISOString();
-
+    
+    
+    const octokit = new Octokit({
+      auth: token,
+    });
+    
     // Create the tag
     const tagResponse = await octokit.rest.git.createTag({
       owner,
