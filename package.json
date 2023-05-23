@@ -1,0 +1,22 @@
+{
+  "name": "actions",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/opensafety/actions.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/opensafety/actions/issues"
+  },
+  "homepage": "https://github.com/opensafety/actions#readme",
+  "dependencies": {
+    "octokit": "^2.0.18"
+  }
+}
