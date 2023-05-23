@@ -7,10 +7,10 @@ async function run() {
     
     const { owner, repo } = github.context.repo;
 
-    const tagName = process.env.INPUT_TAG_NAME;
-    const commitish = process.env.INPUT_COMMITISH;
-    const tagMessage = process.env.INPUT_TAG_MESSAGE;
-    const token = process.env.INPUT_TOKEN;
+    const tagName = core.getInput('tag-name');
+    const commitish = core.getInput('commitish');
+    const tagMessage = core.getInput('tag-message');
+    const token = core.getInput('token');
     const currentTime = new Date().toISOString();
     
     
