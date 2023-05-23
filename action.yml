@@ -1,6 +1,9 @@
 name: Create Tag
 description: Creates a tag and reference in a GitHub repository
 inputs:
+  token:
+    description: 'The Github Token'
+    required: true
   tag-name:
     description: 'The name of the tag'
     required: true
