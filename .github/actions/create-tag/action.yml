@@ -1,0 +1,17 @@
+name: Create Tag
+description: Creates a tag and reference in a GitHub repository
+inputs:
+  tag-name:
+    description: 'The name of the tag'
+    required: true
+  commitish:
+    description: 'The commitish (commit hash, branch, or tag) to which the tag should point'
+    required: false
+    default: ${{ github.sha }}
+  tag-message:
+    description: 'The message for the tag'
+    required: false
+    default: 'Tagging release'
+runs:
+  using: 'node12'
+  main: 'index.js'
